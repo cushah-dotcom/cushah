@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>C. U. Shah Sarvajanik High School | Admissions Open 2026-2027</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Poppins,Arial}
+body{background:#f4f6fb;color:#333}
+header{background:#0b3d91;color:white;padding:20px 40px;display:flex;justify-content:space-between;align-items:center}
+nav a{color:white;margin-left:20px;text-decoration:none;font-weight:500}
+.hero{background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('https://images.unsplash.com/photo-1588072432836-e10032774350');background-size:cover;background-position:center;color:white;text-align:center;padding:120px 20px}
+.hero h1{font-size:48px;margin-bottom:10px}
+.hero p{font-size:20px;margin-bottom:25px}
+.btn{display:inline-block;padding:12px 25px;border-radius:6px;text-decoration:none;margin:8px;font-weight:500}
+.btn-primary{background:#ff9800;color:white}
+.btn-whatsapp{background:#25D366;color:white}
+.section{padding:70px 20px;max-width:1100px;margin:auto}
+.section h2{text-align:center;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:white;padding:25px;border-radius:10px;box-shadow:0 5px 18px rgba(0,0,0,.08);text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.gallery img{width:100%;height:170px;object-fit:cover;border-radius:8px}
+form input,form textarea{width:100%;padding:12px;margin:8px 0;border-radius:6px;border:1px solid #ccc}
+form button{background:#0b3d91;color:white;border:none;padding:12px;border-radius:6px;cursor:pointer}
+.map iframe{width:100%;height:400px;border:0;border-radius:8px}
+footer{background:#0b3d91;color:white;text-align:center;padding:25px;margin-top:50px}
+.float-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;font-size:22px;padding:15px;border-radius:50%;text-decoration:none}
+.float-call{position:fixed;bottom:90px;right:20px;background:#2196F3;color:white;font-size:22px;padding:15px;border-radius:50%;text-decoration:none}
+@media(max-width:700px){.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+
+<header>
+<div><strong>C. U. Shah Sarvajanik High School</strong></div>
+<nav>
+<a href="#about">About</a>
+<a href="#classes">Classes</a>
+<a href="#facilities">Facilities</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Admissions Open 2026-2027</h1>
+<p>SSC English Medium | Nursery to Std. 10</p>
+<a class="btn btn-primary" href="tel:+919999999999">Call Now</a>
+<a class="btn btn-whatsapp" href="https://wa.me/919999999999">WhatsApp Enquiry</a>
+</section>
+
+<section id="about" class="section">
+<h2>About Our School</h2>
+<p style="text-align:center;max-width:750px;margin:auto">C. U. Shah Sarvajanik High School provides quality education with strong academic results, disciplined learning, and modern facilities to help every child grow academically and personally.</p>
+</section>
+
+<section id="classes" class="section">
+<h2>Classes Offered</h2>
+<div class="grid">
+<div class="card">Nursery - Sr KG</div>
+<div class="card">Std 1 - 4</div>
+<div class="card">Std 5 - 7</div>
+<div class="card">Std 8 - 10</div>
+</div>
+</section>
+
+<section id="facilities" class="section">
+<h2>School Facilities</h2>
+<div class="grid">
+<div class="card">Computer Lab</div>
+<div class="card">Science Laboratory</div>
+<div class="card">Library</div>
+<div class="card">Sports Playground</div>
+<div class="card">CCTV Security</div>
+<div class="card">Activity Based Learning</div>
+</div>
+</section>
+
+<section id="gallery" class="section">
+<h2>School Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+<img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+<img src="https://images.unsplash.com/photo-1600195077073-7c815f540a3d">
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Admission Enquiry</h2>
+<form onsubmit="sendWhatsApp();return false;">
+<input id="parent" placeholder="Parent Name" required>
+<input id="student" placeholder="Student Name" required>
+<input id="class" placeholder="Class Applying For">
+<input id="phone" placeholder="Mobile Number" required>
+<textarea id="msg" placeholder="Message"></textarea>
+<button type="submit">Send Enquiry</button>
+</form>
+
+<div class="map" style="margin-top:30px">
+<iframe src="https://www.google.com/maps?q=C.U.%20Shah%20Sarvajanik%20High%20School%20Kandivali%20East%20Mumbai&output=embed"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 C. U. Shah Sarvajanik High School | Kandivali East, Mumbai</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919999999999">💬</a>
+<a class="float-call" href="tel:+919999999999">📞</a>
+
+<script>
+function sendWhatsApp(){
+let p=document.getElementById('parent').value
+let s=document.getElementById('student').value
+let c=document.getElementById('class').value
+let ph=document.getElementById('phone').value
+let m=document.getElementById('msg').value
+let text=`Admission Enquiry:%0AParent:${p}%0AStudent:${s}%0AClass:${c}%0APhone:${ph}%0AMessage:${m}`
+window.open('https://wa.me/919999999999?text='+text)
+}
+</script>
+
+</body>
+</html>
