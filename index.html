@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C. U. Shah Sarvajanik High School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-logo-area">
+        <img src="images/logo.png" alt="C.U. Shah Logo">
+        <strong>C. U. Shah Sarvajanik High School</strong>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#school-gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Admissions Open 2026-2027</h1>
+    <p>SSC English Medium | Nursery to Std. 10</p>
+    <a class="btn btn-primary" href="tel:+918097600080">Call Now</a>
+    <a class="btn btn-whatsapp" href="https://wa.me/918097600080">WhatsApp Enquiry</a>
+</section>
+
+<section id="about" class="section">
+    <div class="about-container">
+        <div class="principal-img-box">
+            <img src="images/Principal_Photo.jpg" alt="Principal">
+        </div>
+        <div class="principal-text-box">
+            <h2>Principal's Message</h2>
+            <p class="quote">"Education is the most powerful weapon which you can use to change the world."</p>
+            <p>Welcome to C. U. Shah Sarvajanik High School. We are dedicated to providing a nurturing environment that fosters academic excellence.</p>
+            <p><strong>— Mrs. Leela V. Lopes</strong><br><small>Principal, M.A., B.Ed.</small></p>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="grid">
+        <div class="card"><h3>🎓 Academic Excellence</h3><p>Consistent high performance in SSC Board results.</p></div>
+        <div class="card"><h3>💻 Smart Classrooms</h3><p>Integrated digital tools for interactive learning.</p></div>
+        <div class="card"><h3>🛡️ Safe Environment</h3><p>24/7 CCTV surveillance and trained security staff.</p></div>
+        <div class="card"><h3>⚽ Holistic Growth</h3><p>Focus on sports, arts, and character development.</p></div>
+		<div class="card"><h3>🛡️ Add New</h3><p>24/7 CCTV surveillance and trained security staff.</p></div>
+        <div class="card"><h3>⚽ Add New</h3><p>Focus on sports, arts, and character development.</p></div>
+    </div>
+</section>
+
+<section id="school-gallery" class="section">
+    <h2>Life at C. U. Shah</h2>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide fade"><img src="images/Classroom.jpeg"><div class="slide-caption">Modern Digital Classrooms</div></div>
+			<div class="slide fade"><img src="images/Science_Lab.jpeg"><div class="slide-caption">Fully Equipped Science Lab</div></div>
+            <div class="slide fade"><img src="image/Science_Lab.jpeg"><div class="slide-caption">Fully Equipped Science Lab</div></div>
+            <div class="slide fade"><img src="images/Activity.jpeg"><div class="slide-caption">Sports & Extra-Curricular Activities</div></div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div style="text-align:center; margin-top: 15px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+</section>
+
+<section id="testimonials" class="section" style="background: #f0f4f8; border-radius: 30px; margin-bottom: 50px;">
+    <h2>What Parents Say</h2>
+    <div class="grid">
+        <div class="card" style="text-align: left;"><div style="color: #ff9800; margin-bottom: 10px;">★★★★★</div><p>"The teachers are incredibly supportive. My daughter has shown immense growth here."</p><br><strong>— Rajesh Khanna</strong></div>
+        <div class="card" style="text-align: left;"><div style="color: #ff9800; margin-bottom: 10px;">★★★★★</div><p>"Best English Medium school in Kandivali East. Highly recommended for discipline."</p><br><strong>— Sunita Sharma</strong></div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Admission Enquiry</h2>
+    <div class="contact-grid">
+        <form onsubmit="sendWhatsApp();return false;">
+            <input id="parent" placeholder="Parent Name" required>
+            <input id="student" placeholder="Student Name" required>
+            <input id="class" placeholder="Class Applying For">
+            <input id="phone" placeholder="Mobile Number" required>
+            <textarea id="msg" placeholder="Message"></textarea>
+            <button type="submit">Submit via WhatsApp</button>
+        </form>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.0055925494858!2d72.8550915752309!3d19.194958082034294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6c4ffffffff%3A0x8cfbfae97d346736!2sCu%20Shah%20High%20School%20%26%20college!5e0!3m2!1sen!2sin!4v1774203468349!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 C. U. Shah Sarvajanik High School | Kandivali East, Mumbai</p>
+</footer>
+
+<div class="floating-container">
+    <a href="https://www.youtube.com/@Chandan12911" class="float-btn bg-yt" target="_blank"><img src="images/Youtube.png" style="width:80%"></a>
+    <a href="https://www.instagram.com/tpcushah/?hl=en" class="float-btn bg-ig" target="_blank"><img src="images/Instagram.png" style="width:80%"></a>
+    <a href="https://www.facebook.com/c.u.shah.school.101" class="float-btn bg-fb" target="_blank"><img src="images/Facebook.png" style="width:80%"></a>
+    <a href="tel:+918097600080" class="float-btn bg-call">📞</a>
+    <a href="https://wa.me/918097600080" class="float-btn bg-wa"><img src="images/Whatsapp.png" style="width:80%"></a>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+        for (i = 0; i < dots.length; i++) { dots[i].style.backgroundColor = "#bbb"; }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].style.backgroundColor = "#0b3d91";
+    }
+    setInterval(() => { plusSlides(1); }, 5000);
+
+    function sendWhatsApp(){
+        let p=document.getElementById('parent').value;
+        let s=document.getElementById('student').value;
+        let c=document.getElementById('class').value;
+        let ph=document.getElementById('phone').value;
+        let m=document.getElementById('msg').value;
+        let text=`*Admission Enquiry*%0A*Parent:* ${p}%0A*Student:* ${s}%0A*Class:* ${c}%0A*Phone:* ${ph}%0A*Message:* ${m}`;
+        window.open('https://wa.me/918097600080?text='+text);
+    }
+</script>
+</body>
+</html>
